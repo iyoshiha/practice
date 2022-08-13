@@ -1,0 +1,4 @@
+FROM golang
+
+VOLUME /go
+
