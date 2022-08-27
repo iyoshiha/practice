@@ -5,9 +5,16 @@ import "fmt"
 var global = 20
 
 func main() { 
-	x := 10
-	x, y := 20, "hello"
+	const x int = 10
+	const (
+		idKey = "id"
+		namekey = "name"
+	)
+	const z = 20 * 10
 
-	fmt.Println(y)
 	fmt.Println(x)
+	fmt.Println(idKey)
+	fmt.Println(namekey)
+	fmt.Println(z)
+
 }
