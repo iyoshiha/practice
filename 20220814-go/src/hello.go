@@ -4,11 +4,11 @@ import "fmt"
 
 var global = 20
 
-func main() { 
+func main() {
 	m := 80
 	const x int = 10
 	const (
-		idKey = "id"
+		idKey   = "id"
 		namekey = "name"
 	)
 	const z = 20 * 10
