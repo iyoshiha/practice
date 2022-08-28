@@ -20,6 +20,8 @@ func main(){
 	fmt.Println(p == nil) // false
 	var q []int;
 	fmt.Println(q == nil) // true
+	var j []int = []int{};
+	fmt.Println(j == nil) // true
 
 	
 	
