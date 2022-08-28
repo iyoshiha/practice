@@ -12,17 +12,21 @@ func main(){
 	// fmt.Println(x)
 	// fmt.Println(cap(x))
 
-	y := make([]int, 5, 10)
+	x := []int{1,2,3,4,5}
+	fmt.Println(cap(x))
+	y := x[:2]
+	y = append(y,10)
+	// x = append(x,20)
+	y = append(y,10,10)
+	y = append(y,10)
+
+	fmt.Println("===== x =====")
+	fmt.Println(x)
+	fmt.Println(len(x))
+	fmt.Println(cap(x))
+	fmt.Println("===== y =====")
 	fmt.Println(y)
+	fmt.Println(len(y))
 	fmt.Println(cap(y))
-
-	p := make([]int, 0, 10)
-	fmt.Println(p == nil) // false
-	var q []int;
-	fmt.Println(q == nil) // true
-	var j []int = []int{};
-	fmt.Println(j == nil) // true
-
-	
 	
 }
