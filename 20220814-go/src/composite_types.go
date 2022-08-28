@@ -28,13 +28,14 @@ func main(){
 	ran["majimanji"] = 1010
 	fmt.Println(len(ran))
 	
-	var emp map[string]int
-	emp["err"] = 3 // panic assignment to nil
-	fmt.Println(emp)
+	// var emp map[string]int
+	// emp["err"] = 3 // panic assignment to nil
+	// fmt.Println(emp)
 
 	
-	// ages := make(map[int][]string, 10)
+	ages := make(map[int][]string, 10)
+	ages[1] = []string{"kondo"}
+	fmt.Println((ages))
 	
-
 
 }
