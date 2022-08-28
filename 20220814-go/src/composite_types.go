@@ -50,5 +50,8 @@ func main(){
 	fmt.Println("ok idiom\n", v, ok)	
 	v, ok = m["nothing"]
 	fmt.Println("ok idiom\n", v, ok)	
+	delete(m, "hello")
+	fmt.Println("delete function\n", m)	
+
 
 }
