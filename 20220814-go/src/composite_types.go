@@ -13,6 +13,20 @@ func main(){
 	fmt.Println("===== totalWins =====")
 	fmt.Println(totalWins)
 	fmt.Println("===== make =====")
+
+	teams := map[string][]string{
+		"Orcas": []string{"Fred", "Ralph"},
+		"Lions": []string{"ired", "asalph"},
+		"kittens": []string{"ilred", "opalph"},
+	}
+	
+	fmt.Println(teams["Orcas"])
+	ran := map[string]int{
+		"mynum":4,
+		"Komnum":9,
+	}
+	fmt.Println(ran["mynum"])
+	
 	
 
 }
