@@ -12,10 +12,14 @@ func main(){
 	k[1] = z
 	var x = [21]int{1,5:4,6,1:100,15}
 
-
+	var s []int;
+	var ss = []int{2,3,4,5,6}
 	// ture
 	fmt.Println(y == z);
 	fmt.Println(len(k[0]));
 	fmt.Println(x)
+	s = append(s,4)
+	s = append(s,ss...)
+	fmt.Println(s)
 	
 }
