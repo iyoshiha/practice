@@ -35,7 +35,18 @@ func main(){
 	
 	ages := make(map[int][]string, 10)
 	ages[1] = []string{"kondo"}
-	fmt.Println((ages))
 	
+	fmt.Println((ages[8]))
+	fmt.Println((ages))
+
+	// ok idiom 
+	m := map[string]int{
+		"hello": 5,
+		"world": 0,
+	}
+	v, ok := m["hello"]
+	fmt.Println("ok idiom\n", v, ok)	
+	v, ok = m["world"]
+	fmt.Println("ok idiom\n", v, ok)	
 
 }
