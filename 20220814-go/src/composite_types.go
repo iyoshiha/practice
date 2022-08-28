@@ -25,8 +25,16 @@ func main(){
 		"mynum":4,
 		"Komnum":9,
 	}
-	fmt.Println(ran["mynum"])
+	ran["majimanji"] = 1010
+	fmt.Println(len(ran))
 	
+	var emp map[string]int
+	emp["err"] = 3 // panic assignment to nil
+	fmt.Println(emp)
+
 	
+	// ages := make(map[int][]string, 10)
+	
+
 
 }
