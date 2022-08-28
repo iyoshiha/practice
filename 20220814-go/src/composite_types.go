@@ -20,5 +20,11 @@ func main(){
 	var nn = string(n) // int to string is not hobidden but not recommended
 	fmt.Println(nn)
 
-	
+	var nnn string = "hello, ☺ A"
+	var bs []byte = []byte(nnn)
+	var rs []rune= []rune(nnn)
+	fmt.Println(nnn)
+	fmt.Println(bs)
+	fmt.Println(rs)
+
 }
