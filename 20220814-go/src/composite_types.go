@@ -48,5 +48,7 @@ func main(){
 	fmt.Println("ok idiom\n", v, ok)	
 	v, ok = m["world"]
 	fmt.Println("ok idiom\n", v, ok)	
+	v, ok = m["nothing"]
+	fmt.Println("ok idiom\n", v, ok)	
 
 }
