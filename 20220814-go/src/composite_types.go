@@ -4,24 +4,23 @@ import "fmt"
 
 func main(){
 
-	// var x [3]int
-	var y = [3]int{1,2,3}
-	var z = [...]int{1,2,3}
-	var k [2][3]int 
-	k[0] = y
-	k[1] = z
-	var x = [21]int{1,5:4,6,1:100,15}
+	// make
 
-	var s []int;
-	var ss = []int{2,3,4,5}
-	// ture
-	fmt.Println(y == z);
-	fmt.Println(len(k[0]));
-	fmt.Println(x)
-	s = append(s,4)
-	s = append(s,ss...)
-	fmt.Println(cap(s))
-	s = append(s,4)
-	fmt.Println(cap(s))
+	// x := make([]int,5)
+
+	// x = append(x, 8) // [0 0 0 0 0 0 0 0 10]
+	// fmt.Println(x)
+	// fmt.Println(cap(x))
+
+	y := make([]int, 5, 10)
+	fmt.Println(y)
+	fmt.Println(cap(y))
+
+	p := make([]int, 0, 10)
+	fmt.Println(p == nil) // false
+	var q []int;
+	fmt.Println(q == nil) // true
+
+	
 	
 }
