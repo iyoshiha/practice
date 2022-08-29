@@ -1,14 +1,15 @@
 package main
 
-import "fmt"
+import (
+	. "fmt"
+	"math/rand"
+)
 
 
 func main(){
 	
 	// blocks 
-
-	x := 10
-	x := 8 // 
-	fmt.Println(x)
-
+	n := rand.Intn(10)
+	
+	Println(n)
 }
