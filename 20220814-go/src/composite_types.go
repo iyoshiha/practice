@@ -10,11 +10,13 @@ func main(){
 		age		int
 		pet		string
 	}
-	var totalWins = map[string]int{} // empty map
+
+	var fred person
+	bob := person{}
 
 	fmt.Println("===== person =====")
-	fmt.Println(person)
+	fmt.Println(fred)
 	fmt.Println("===== totalWins =====")
-	fmt.Println(totalWins)
+	fmt.Println(bob)
 	fmt.Println("===== make =====")
 }
