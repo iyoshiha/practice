@@ -2,50 +2,29 @@ package main
 
 import "fmt"
 
+type MyfuncOpts struct {
+	FirstName string
+	LastName string
+	Age int
+}
+
 func main(){
 
-	// struct 
-	type person struct {
-		name	string
-		age		int
-		pet		string
+	fmt.Println(div(100, 0))
+	fmt.Println(MyfuncOpts{FirstName:"ba",Age:10})
+
+
+
+}
+
+func myfunc(opts MyfuncOpts) int{
+
+	return opts.Age 
+}
+
+func div(numerator int, denominator int) int {
+	if denominator == 0{
+		return 0
 	}
-
-	var fred person
-	bob := person{"julia", 40, "cat"}
-
-	fmt.Println("===== person =====")
-	fmt.Println(fred)
-	fmt.Println("===== totalWins =====")
-	fmt.Println(bob)
-	fmt.Println("===== make =====")
-
-	beth := person{
-		age: 30,
-		name: "beth",
-	}
-
-	fmt.Println(beth)
-	
-	type firstPerson struct {
-		name string
-		age int
-	}
-
-	type secondPerson struct {
-		name string
-		age int
-	}
-
-	var g struct {
-		name 	string
-		age		int
-	}
-
-	f := firstPerson{"bob", 50}
-	g = f
-	fmt.Println(g)
-
-
-
+	return numerator / denominator
 }
