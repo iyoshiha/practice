@@ -4,10 +4,12 @@ import "fmt"
 
 
 func main(){
+	
+	// blocks 
 
-	fmt.Println()
-	fmt.Println()
-
-
+x := 10
+fmt.Println(x)
+fmt := "oops"
+fmt.Println(fmt)
 
 }
