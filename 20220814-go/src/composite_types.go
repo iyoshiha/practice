@@ -7,9 +7,8 @@ func main(){
 	
 	// blocks 
 
-x := 10
-fmt.Println(x)
-fmt := "oops"
-fmt.Println(fmt)
+	x := 10
+	x := 8 // 
+	fmt.Println(x)
 
 }
