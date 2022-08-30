@@ -64,7 +64,7 @@ func main(){
 
 	fmt.Println("===========")
 
-	samples := []string{"hello", "apple_n!"}
+	samples := []string{"hello", "apple_π!"}
 	for _, sample := range samples {
 		for i, r := range sample {
 			fmt.Println(i, r, string(r))
