@@ -62,4 +62,15 @@ func main(){
 		}
 	}
 
+	fmt.Println("===========")
+
+	samples := []string{"hello", "apple_n!"}
+	for p, sample := range samples {
+		for i, r := range sample {
+			fmt.Println(p, " loop\n", i, r, string(r))
+		}
+		fmt.Println()
+	}
+
+
 }
