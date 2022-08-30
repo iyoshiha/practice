@@ -64,6 +64,8 @@ func main(){
 
 	fmt.Println("===========")
 
+	// number 7 will be skip with π 
+	// because iterating over the runes 
 	samples := []string{"hello", "apple_π!"}
 	for _, sample := range samples {
 		for i, r := range sample {
