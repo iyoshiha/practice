@@ -12,9 +12,8 @@ func main(){
 }
 
 func choosingIfAndSwitch() {
-n := rand.Intn(10);
-	fmt.Println("n =", n)
-	switch  {
+
+	switch n := rand.Intn(10); {
 	case n == 0:
 		fmt.Println("that's too low")
 	case n > 5:
