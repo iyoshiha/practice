@@ -7,9 +7,23 @@ import (
 
 func main(){
 	
- 	standardSwitch()
-	missingLabelSwitch()
+	blankSwitches()
 
+}
+
+func blankSwitches() {
+
+	words := []string{"hi","salutations", "hello"}
+	for _,word := range words {
+		switch wordLen := len(word); {
+		case wordLen < 5:
+			fmt.Println(word, "is a short word!")
+		case wordLen > 10:
+			fmt.Println(word, "is a long word!")
+		default:
+			fmt.Println(word, "is the exqxtly the right word!")
+		}
+	}
 
 }
 
@@ -31,7 +45,7 @@ func standardSwitch() {
 }
 
 
-func missingLabelSwitch () {
+func missingLabelSwitch() {
 
 	loop:
 		for i := 0; i < 10; i++ {
@@ -47,6 +61,4 @@ func missingLabelSwitch () {
 				fmt.Println(i, "is boring")
 			}
 		}
-
-
 }
