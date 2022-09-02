@@ -7,13 +7,13 @@ import (
 
 func main(){
 	
- 	StandardSwitch()
+ 	standardSwitch()
 	missingLabelSwitch()
 
 
 }
 
-func StandardSwitch() {
+func standardSwitch() {
 
 	words := []string{"a", "cow", "smile", "gopher", "octopus", "anthropologlist"}
 	for _, word := range words {
