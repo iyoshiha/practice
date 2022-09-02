@@ -14,7 +14,7 @@ func main(){
 			fmt.Println(word, "is a short word!")
 		case 5:
 			wordLen := len(word)
-			fmt.Println(word, "is exactly theright length:", wordLen)
+			fmt.Println(word, "is exactly the right length:", wordLen)
 		case 6,7,8,9:
 		default:
 			fmt.Println(word, "is a long word!")
