@@ -2,13 +2,26 @@ package main
 
 import (
 	"fmt"
+	"math/rand"
 )
 
 
 func main(){
 	
-	blankSwitches()
+	choosingIfAndSwitch()
+}
 
+func choosingIfAndSwitch() {
+n := rand.Intn(10);
+	fmt.Println("n =", n)
+	switch  {
+	case n == 0:
+		fmt.Println("that's too low")
+	case n > 5:
+		fmt.Println("that's too big", n)
+	default:
+		fmt.Println("that's a good number", n)
+	}
 }
 
 func blankSwitches() {
