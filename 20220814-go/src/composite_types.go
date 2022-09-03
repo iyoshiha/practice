@@ -3,10 +3,9 @@ package main
 import (
 	"fmt"
 	"math/rand"
-	"strconv"
 )
 
-func main(){
+func mainn(){
 	validGoto()
 }
 
