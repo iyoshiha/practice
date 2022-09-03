@@ -6,8 +6,10 @@ import (
 	"errors"
 )
 
-func main() {
+type opFuncType func(int, int) int
 
+
+func main() {
 
 	expressions := [][]string{
 		[]string{"2", "+", "3"},
@@ -51,7 +53,8 @@ func sub(i int, j int) int {return i - j}
 func mul(i int, j int) int {return i * j}
 func div(i int, j int) int {return i / j}
 
-var opMap = map[string]func(int, int) int{
+// var opMap = map[string]func(int, int) int{
+var opMap = map[string]opFuncType{
 	"+": add,
 	"-": sub,
 	"*": mul,
