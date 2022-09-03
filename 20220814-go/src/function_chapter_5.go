@@ -18,14 +18,12 @@ func main() {
 
 // multiple return value
 func divAndRemainder(numerator, denominator int) (result int, remainder int, err error) {
-	result, remainder = 20, 30
 	if denominator == 0 {
 		err = errors.New("cannot divie by zero")
 		return result, remainder, err
 	}
-	// we dont have to return named return valued: 
-	// this potentially has a problem
-	return numerator / denominator, numerator % denominator, err
+	result, remainder = numerator / denominator, numerator % denominator
+	return result, remainder, err
 }
 
 func addTo(base int, vals ...int) []int {
