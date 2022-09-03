@@ -12,10 +12,10 @@ func main(){
 func validGoto() {
 	a := rand.Intn(10)
 	for a < 100 {
-		if a%5 == 0 {
+		if a % 5 == 0 {
 			goto done
 		}
-		a = a*2 + 1
+		a = a * 2 + 1
 	}
 	fmt.Println("do sth when the loop completes normally")
 done:
