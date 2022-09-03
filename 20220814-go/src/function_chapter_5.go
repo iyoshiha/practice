@@ -8,9 +8,7 @@ import (
 
 type opFuncType func(int, int) int
 
-
-func main() {
-
+func funcvaricheck() {
 	expressions := [][]string{
 		[]string{"2", "+", "3"},
 		[]string{"2", "-", "3"},
@@ -45,6 +43,10 @@ func main() {
 		result := onFunc(p1, p2)
 		fmt.Println(result)
 	}
+}
+
+func main() {
+
 
 }
 
