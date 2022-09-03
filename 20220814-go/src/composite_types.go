@@ -18,6 +18,7 @@ func validGoto() {
 		a = a * 2 + 1
 	}
 	fmt.Println("do sth when the loop completes normally")
+	return 
 done:
 	fmt.Println("do complicated stuff no matter why we left the loop")
 	fmt.Println(a)
