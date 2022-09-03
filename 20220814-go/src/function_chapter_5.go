@@ -16,14 +16,14 @@ func main() {
 	fmt.Println(result, remainder, err)
 }
 
-// multiple return value
+// blank return (naked return )
 func divAndRemainder(numerator, denominator int) (result int, remainder int, err error) {
 	if denominator == 0 {
 		err = errors.New("cannot divie by zero")
-		return result, remainder, err
+		return 
 	}
 	result, remainder = numerator / denominator, numerator % denominator
-	return result, remainder, err
+	return 
 }
 
 func addTo(base int, vals ...int) []int {
