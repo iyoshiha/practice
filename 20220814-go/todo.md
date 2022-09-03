@@ -1,13 +1,37 @@
-2022/09/03  
-all tasks
-- [ ] asdf
-- [ ] chpater 5 function
-- [ ] chpater 6 pointers 
-- [ ] chpater 7 types methods interface
-- [ ] chpater 8 errors
-- [ ] chpater 9 modules package imports
-- [ ] chpater 10 concurrnecy
-- [ ] chpater 11 standard library
-- [ ] chpater 12 context
-- [ ] chpater 13 writing tests
-- [ ] chpater 13 here there be dragons: reflect, unsage and cgo
+# todo list
+
+## 2022/09/03  
+
+- [x] chpater 4 blocks, shadows, and control structures  
+- [ ] chpater 5 function  
+    15 pages  
+- [ ] chpater 6 pointers  
+    15 pages  
+
+all tasks  
+
+- [x] chpater 4 blocks, shadows, and control structures  
+    15 pages  
+- [ ] chpater 5 function  
+    15 pages  
+- [ ] chpater 6 pointers  
+    15 pages  
+- [ ] chpater 7 types methods interface  
+    30 pages  
+- [ ] chpater 8 errors  
+    15 pages  
+- [ ] chpater 9 modules package imports  
+    30 pages  
+- [ ] chpater 10 concurrnecy  
+    30 pages  
+- [ ] chpater 11 standard library  
+    15 pages  
+- [ ] chpater 12 context  
+    15 pages  
+- [ ] chpater 13 writing tests  
+    30 pages  
+- [ ] chpater 14 here there be dragons: reflect, unsage and cgo  
+    30 pages  
+- [ ] chpater 15 a look at the funture: generics in go  
+    15 pages  
+  
