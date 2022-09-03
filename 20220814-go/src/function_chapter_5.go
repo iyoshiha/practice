@@ -2,18 +2,58 @@ package main
 
 import (
 	"fmt"
-	"os"
+	"strconv"
 	"errors"
 )
 
 func main() {
 
-	result, remainder, err := divAndRemainder(5,2)
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(1)
+	expressions := [][]string{
+		[]string{"2", "+", "3"},
+		[]string{"2", "-", "3"},
+		[]string{"2", "*", "3"},
+		[]string{"2", "/", "3"},
+		[]string{"2", "%", "3"},
+		[]string{"two", "+", "three"},
+		[]string{"5"},
 	}
-	fmt.Println(result, remainder, err)
+	for _, expression := range expressions {
+		if len(expression) != 3 {
+			fmt.Println("invalid expression:", expression)
+			continue
+		}
+		p1, err := strconv.Atoi(expression[0])
+		if err != nil {
+			fmt.Println(err)
+			continue
+		}
+		op := expression[1]
+		onFunc, ok := opMap[op]
+		if !ok {
+			fmt.Println("unsupported operator:", op)
+			continue
+		}
+		p2, err := strconv.Atoi(expression[2])
+		if err != nil {
+			fmt.Println(err)
+			continue
+		}
+		result := onFunc(p1, p2)
+		fmt.Println(result)
+	}
+
+}
+
+func add(i int, j int) int {return i + j}
+func sub(i int, j int) int {return i - j}
+func mul(i int, j int) int {return i * j}
+func div(i int, j int) int {return i / j}
+
+var opMap = map[string]func(int, int) int{
+	"+": add,
+	"-": sub,
+	"*": mul,
+	"/": div,
 }
 
 // blank return (naked return )
@@ -39,7 +79,7 @@ func variadicInputParameters() {
 }
 
 // you can write your input when multiple input prameters of the same type
-func div(numerator, denominator int) int {
+func divk(numerator, denominator int) int {
 	if denominator == 0 {
 		return 0
 	}
