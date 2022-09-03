@@ -17,6 +17,7 @@ func main() {
 }
 
 // blank return (naked return )
+// we must not use blank return since it's really confusing for code readers  
 func divAndRemainder(numerator, denominator int) (result int, remainder int, err error) {
 	if denominator == 0 {
 		err = errors.New("cannot divie by zero")
