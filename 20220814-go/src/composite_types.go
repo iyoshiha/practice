@@ -7,9 +7,10 @@ import (
 
 
 func main(){
-	firstGoto()
 }
 
+/* 
+**** comment out for compile
 func firstGoto() {
 	a := 10
 	goto skip
@@ -24,9 +25,8 @@ skip:
 	inner:
 		fmt.Println("a is less than b")
 	}
-
 }
-
+*/
 func choosingIfAndSwitch() {
 
 	switch n := rand.Intn(10); {
