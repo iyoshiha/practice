@@ -8,6 +8,7 @@ import (
 
 func main() {
 
+
 	expressions := [][]string{
 		[]string{"2", "+", "3"},
 		[]string{"2", "-", "3"},
@@ -17,7 +18,8 @@ func main() {
 		[]string{"two", "+", "three"},
 		[]string{"5"},
 	}
-	for _, expression := range expressions {
+	for i, expression := range expressions {
+		fmt.Println("start :", i)
 		if len(expression) != 3 {
 			fmt.Println("invalid expression:", expression)
 			continue
