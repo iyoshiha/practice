@@ -21,7 +21,7 @@ func divAndRemainder(numerator, denominator int) (int, int, error) {
 	if denominator == 0 {
 		return 0, 0, errors.New("cannot divie by zero")
 	}
-	return (numerator / denominator, numerator % denominator, nil)
+	return numerator / denominator, numerator % denominator, nil
 }
 
 func addTo(base int, vals ...int) []int {
