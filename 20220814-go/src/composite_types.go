@@ -7,6 +7,11 @@ import (
 
 
 func main(){
+	validGoto()
+}
+
+func validGoto() {
+
 }
 
 /* 
