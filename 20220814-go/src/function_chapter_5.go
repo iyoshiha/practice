@@ -5,8 +5,15 @@ import (
 )
 
 func main() {
-	result := div(5,2)
-	fmt.Println(result)
+	var maji int = 100
+	abc(maji)
+
+}
+
+type aaa int
+
+func abc(a aaa) {
+	fmt.Println(a)
 
 }
 
