@@ -1,6 +1,17 @@
 # todo list
 
+## 2022/09/04  
+
+total 25 pages:
+
+- [ ] chpater 5 function  
+    10 pages left  
+- [ ] chpater 6 pointers  
+    15 pages  left  
+
 ## 2022/09/03  
+
+acomplishment rate : 60 %
 
 - [x] chpater 4 blocks, shadows, and control structures  
 - [ ] chpater 5 function  
