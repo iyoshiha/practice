@@ -82,7 +82,15 @@ func deferExample() {
 }
 
 func main() {
-	deferExample()
+	fmt.Println(orderDefer())
+
+}
+
+func orderDefer() int {
+
+	defer fmt.Println("end of orderDefer")
+	return 10
+
 }
 
 func add(i int, j int) int {return i + j}
