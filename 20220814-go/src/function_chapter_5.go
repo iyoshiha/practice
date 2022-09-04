@@ -7,6 +7,8 @@ import (
 	"os"
 	"log"
 	"io"
+	"context"
+	"database/sql"
 )
 
 type opFuncType func(int, int) int
@@ -85,6 +87,27 @@ func main() {
 	fmt.Println(orderDefer())
 
 }
+
+func DoSomeInserts(ctx context.Context, db *sql.DB, value1, value2 string) (err error) {
+		tx,err := db.BeginTx(ctx, nil)
+		if err != nil {
+			return err
+		}
+		defer func() {
+			if err == nil {
+				err = tx.Commit()
+			}
+			if err != nil {
+				tx.Rollback()
+			}
+		}()
+		_, err = tx.ExecContext(ctx, "INSERT INTO FOO (val) values $1")
+		if err != nil {
+			return err
+		}
+		// use tx to do more database inserts here
+		return nil
+	}
 
 func orderDefer() int {
 
