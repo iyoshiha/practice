@@ -51,8 +51,6 @@ func main() {
 			fmt.Println("printing", j, "from inside of an anonymous function")
 		}(i)
 	}
-
-
 }
 
 func add(i int, j int) int {return i + j}
