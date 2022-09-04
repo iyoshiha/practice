@@ -6,6 +6,7 @@ import (
 	"errors"
 	"os"
 	"log"
+	"io"
 )
 
 type opFuncType func(int, int) int
@@ -59,7 +60,7 @@ func makeMult(base int) func(int) int{
 	}
 }
 
-func deferexample() {
+func deferExample() {
 	if len(os.Args) < 2 {
 		log.Fatal("no file specified")
 	}
@@ -71,6 +72,12 @@ func deferexample() {
 	data := make([]byte, 2048)
 	for {
 		count, err := f.Read(data)
+		os.Stdout.Write(data[:count])
+		if err != nil {
+			if err != io.EOF {
+				log.Fatal(err)
+			}
+		}
 	}
 }
 
