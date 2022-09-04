@@ -82,11 +82,7 @@ func deferExample() {
 }
 
 func main() {
-	twoBase := makeMult(2)
-	threeBase := makeMult(3)
-	for i := 0; i<3; i++ {
-		fmt.Println(twoBase(i), threeBase(i))
-	}
+	deferExample()
 }
 
 func add(i int, j int) int {return i + j}
