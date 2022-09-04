@@ -45,14 +45,23 @@ func funcvaricheck() {
 	}
 }
 
-func main() {
-	for i := 0; i < 5; i++ {
-		func(j int) {
-			fmt.Println("printing", j, "from inside of an anonymous function")
-		}(i)
-	}
-}
 
+func main() {
+	people := []Person{
+		{"Pat", "Patterson", 37},
+		{"Tracy", "Bobbert", 23},
+		{"Fred", "Fredson", 10},
+	}
+	sort.Slice(people, func(i, j int) bool{
+		return people[i].LastName < people[j].LastName
+	})
+	fmt.Println(people)
+	sort.Slice(people, func(i, j int) bool{
+		return people[i].Age < people[j].Age
+	})
+	fmt.Println(people)
+
+}
 func add(i int, j int) int {return i + j}
 func sub(i int, j int) int {return i - j}
 func mul(i int, j int) int {return i * j}
