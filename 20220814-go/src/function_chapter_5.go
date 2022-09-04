@@ -45,13 +45,20 @@ func funcvaricheck() {
 	}
 }
 
-func main() {
-	for i := 0; i < 5; i++ {
-		func(j int) {
-			fmt.Println("printing", j, "from inside of an anonymous function")
-		}(i)
-	}
 
+type Person struct {
+	FirstName string
+	LastName string
+	Age int
+}
+
+func main() {
+	people := []Person{
+		{"Pat", "Patterson", 37},
+		{"Tracy", "Bobbert", 23},
+		{"Fred", "Fredson", 10},
+	}
+	fmt.Println(people)
 
 }
 
