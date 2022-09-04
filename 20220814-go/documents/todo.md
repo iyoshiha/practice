@@ -4,7 +4,7 @@
 
 total 25 pages:
 
-- [ ] chpater 5 function  
+- [x] chpater 5 function  (not finished defer sql)
     10 pages left  
 - [ ] chpater 6 pointers  
     15 pages  left  
