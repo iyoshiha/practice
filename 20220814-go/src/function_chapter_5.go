@@ -4,7 +4,8 @@ import (
 	"fmt"
 	"strconv"
 	"errors"
-	"sort"
+	"os"
+	"log"
 )
 
 type opFuncType func(int, int) int
@@ -52,22 +53,35 @@ type Person struct {
 	Age int
 }
 
-func main() {
-	people := []Person{
-		{"Pat", "Patterson", 37},
-		{"Tracy", "Bobbert", 23},
-		{"Fred", "Fredson", 10},
+func makeMult(base int) func(int) int{
+	return func(factor int) int {
+		return base * factor
 	}
-	sort.Slice(people, func(i, j int) bool{
-		return people[i].LastName < people[j].LastName
-	})
-	fmt.Println(people)
-	sort.Slice(people, func(i, j int) bool{
-		return people[i].Age < people[j].Age
-	})
-	fmt.Println(people)
-
 }
+
+func deferexample() {
+	if len(os.Args) < 2 {
+		log.Fatal("no file specified")
+	}
+	f, err := os.Open(os.Args[1])
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer f.Close()
+	data := make([]byte, 2048)
+	for {
+		count, err := f.Read(data)
+	}
+}
+
+func main() {
+	twoBase := makeMult(2)
+	threeBase := makeMult(3)
+	for i := 0; i<3; i++ {
+		fmt.Println(twoBase(i), threeBase(i))
+	}
+}
+
 func add(i int, j int) int {return i + j}
 func sub(i int, j int) int {return i - j}
 func mul(i int, j int) int {return i * j}
