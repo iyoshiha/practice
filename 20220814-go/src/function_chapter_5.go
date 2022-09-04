@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"strconv"
 	"errors"
+	"sort"
 )
 
 type opFuncType func(int, int) int
@@ -45,6 +46,11 @@ func funcvaricheck() {
 	}
 }
 
+type Person struct {
+	FirstName string
+	LastName string
+	Age int
+}
 
 func main() {
 	people := []Person{
