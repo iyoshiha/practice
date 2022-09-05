@@ -83,8 +83,23 @@ func deferExample() {
 	}
 }
 
+type person struct {
+	age int
+	name string
+}
+
+func modifyFails(i int, s string, p person) {
+	i = i * 2
+	s = "Goodbye"
+	p.name = "Bob"
+}
+
 func main() {
-	fmt.Println(orderDefer())
+	p := person{}
+	i := 2
+	s := "Hello"
+	modifyFails(i, s, p)
+	
 
 }
 
