@@ -11,8 +11,12 @@ import (
 	"database/sql"
 )
 
+type Score int
+type Converter func(string)Score
+type TeamScores map[string]Score
 
 func main() {
+	
 
 
 }
