@@ -50,7 +50,7 @@ func funcvaricheck() {
 	}
 }
 
-type Person struct {
+type Person_ struct {
 	FirstName string
 	LastName string
 	Age int
@@ -94,7 +94,7 @@ func modifyFails(i int, s string, p person) {
 	p.name = "Bob"
 }
 
-func main() {
+func main5() {
 	p := person{}
 	i := 2
 	s := "Hello"
