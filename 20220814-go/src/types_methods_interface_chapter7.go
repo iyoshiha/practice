@@ -26,9 +26,9 @@ func (p Person) String() string {
 
 func main() {
 	p := Person {
-		FirstName: "Fred"
-		LastName: "Fredson"
-		Age : 23
+		FirstName: "Fred",
+		LastName: "Fredson",
+		Age : 23,
 	}
 
 }
