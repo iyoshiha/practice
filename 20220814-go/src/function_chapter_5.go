@@ -98,6 +98,7 @@ func main5() {
 	p := person{}
 	i := 2
 	s := "Hello"
+	gosa
 	modifyFails(i, s, p)
 	
 
