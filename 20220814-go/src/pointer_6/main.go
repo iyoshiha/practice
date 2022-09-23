@@ -13,4 +13,8 @@ func main() {
 	x = new(int)
 	Println(x == nil)
 
+	// false
+	var y int
+	x = &y
+	Println(x == nil)
 }
