@@ -31,4 +31,11 @@ func main() {
 
 	xx := &Foo{}
 	Println(xx == nil)
+
+	p := Foo{
+		a: 1
+		b: 2
+		c: 3
+	}
+	Println(p == nil)
 }
