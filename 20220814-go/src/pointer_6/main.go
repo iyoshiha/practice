@@ -5,5 +5,6 @@ import(
 )
 
 func main() {
-	
+	var x *int
+	Println(x == nil)
 }
