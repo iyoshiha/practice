@@ -4,6 +4,12 @@ import(
 	. "fmt"
 )
 
+type Foo struct {
+	a int
+	b int 
+	c int
+}
+
 func main() {
 	// true 
 	var x *int
@@ -21,5 +27,8 @@ func main() {
 	// declare a variable and point to it
 	var y int
 	x = &y
+	Println(x == nil)
+
+	x = &Foo{}
 	Println(x == nil)
 }
