@@ -29,6 +29,6 @@ func main() {
 	x = &y
 	Println(x == nil)
 
-	x = &Foo{}
-	Println(x == nil)
+	xx := &Foo{}
+	Println(xx == nil)
 }
