@@ -37,5 +37,5 @@ func main() {
 		*b: 2,
 		c: 3,
 	}
-	Println(p == nil)
+	Println(p )
 }
