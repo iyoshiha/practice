@@ -10,6 +10,11 @@ type Foo struct {
 	c int
 }
 
+func intp(num int) *int{
+	tmp := num
+	return &tmp
+}
+
 func main() {
 	// true 
 	var x *int
@@ -34,17 +39,36 @@ func main() {
 
 	p := Foo{
 		a: 1,
-		*b: 2,
+		b: intp(2),
 		c: 3,
 	}
 	Println(p )
 
 	// another way to write 
-	p := Foo{
+	p = Foo{
 		a: 1,
 		b: intp(4),
 		c: 3,
 	}
-	Println(p )
+	Println(p)
+	var ap *int
+	Println(ap)
 
+	
+}
+
+// dont do this
+func badMakeFoo(f *Foo) error {
+		f.a = 1
+		f.b = intp(2)
+	return nil
+}
+
+// do this 
+func goodMakeFoo() (Foo, error) {
+	f := Foo{
+		a: 1,
+		b: intp(2),
+	}
+	return f, nil
 }
