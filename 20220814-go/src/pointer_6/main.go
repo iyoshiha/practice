@@ -6,7 +6,7 @@ import(
 
 type Foo struct {
 	a int
-	b *int 
+	b *int
 	c int
 }
 
@@ -38,4 +38,13 @@ func main() {
 		c: 3,
 	}
 	Println(p )
+
+	// another way to write 
+	p := Foo{
+		a: 1,
+		b: intp(4),
+		c: 3,
+	}
+	Println(p )
+
 }
