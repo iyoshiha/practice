@@ -53,8 +53,6 @@ func main() {
 	Println(p)
 	var ap *int
 	Println(ap)
-
-	
 }
 
 // dont do this
@@ -68,7 +66,11 @@ func badMakeFoo(f *Foo) error {
 func goodMakeFoo() (Foo, error) {
 	f := Foo{
 		a: 1,
-		b: intp(2),
+		b: intp(2)),
 	}
 	return f, nil
 }
+
+
+
+
